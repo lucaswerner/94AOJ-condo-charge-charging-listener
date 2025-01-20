@@ -39,17 +39,17 @@ public class MyMessagingApplication {
         // -> emitter.send(string));
 
         // "http://localhost:8090/api/v1/condominiums/12312312300012/stations/6cc501c3-6a23-4bb4-a5c1-de6d44ef66fd/charges"
-        final PatchChargeDTO patchChargeDTO = new PatchChargeDTO();
-        patchChargeDTO.setCnpj("12312312300012");
-        patchChargeDTO.setStationId("6cc501c3-6a23-4bb4-a5c1-de6d44ef66fd");
-        patchChargeDTO.setChargeId(1L);
+        // final PatchChargeDTO patchChargeDTO = new PatchChargeDTO();
+        // patchChargeDTO.setCnpj("12312312300012");
+        // patchChargeDTO.setStationId("6cc501c3-6a23-4bb4-a5c1-de6d44ef66fd");
+        // patchChargeDTO.setChargeId(1L);
 
-        patchChargeDTO.setChargeEndPreview(LocalDateTime.now().plusHours(2L));
-        patchChargeDTO.setChargeEnd(null);
-        patchChargeDTO.setEnergyConsumption(20);
-        patchChargeDTO.setStatus(ChargeStatus.CHARGING);
+        // patchChargeDTO.setChargeEndPreview(LocalDateTime.now().plusHours(2L));
+        // patchChargeDTO.setChargeEnd(null);
+        // patchChargeDTO.setEnergyConsumption(20);
+        // patchChargeDTO.setStatus(ChargeStatus.CHARGING);
 
-        emitter.send(patchChargeDTO);
+        // emitter.send(patchChargeDTO);
     }
 
     /**
